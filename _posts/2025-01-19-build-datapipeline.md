@@ -91,6 +91,7 @@ author: HamIT
 
 ### 4.4 Observability and Logs/Metrics
 - Integrating observability solutions (e.g., Prometheus+Grafana, ELK Stack, Datadog) helps visualize pipeline status, identify failures, and debug issues effectively.<br>
+<br><br>
 
 ## 5. Implementation Example: A Simple Scenario
 - Here’s an example pipeline for predicting user churn in an online shopping mall.
@@ -110,11 +111,13 @@ author: HamIT
   6. Monitoring
     - Visualize metrics like prediction request volume, response time, and output distribution using Prometheus and Grafana.
     - Trigger retraining if data drift is detected and notify the team via Slack alerts.
+<br><br>
 
 ## 6. Summary
 - Building data pipelines for automated model management is not something achieved in a single attempt. It’s practical to start small (e.g., automating nightly ETL or model retraining) and gradually expand to include CI/CD+CT, monitoring, and model registries.
 - Additionally, your infrastructure setup—whether fully cloud-based or on-premises—will influence tool selection and architecture design. The key is to progressively automate the workflow while ensuring traceability and reproducibility throughout the entire lifecycle of models and data
 - To create “sustainable AI”, you need more than brilliant ideas and high-performing models. Robust automated pipelines are the real backbone of a reliable AI system.
+<br><br>
 
 ## References
 
