@@ -10,10 +10,6 @@ mathjax: true
 author: HamIT
 ---
 
-/* Markdown 콘텐츠에만 줄 간격 적용 */
-.markdown-body {
-  line-height: 1.8;
-}
 
 {: .box-success}
 **Have you ever faced situations like these?**<br>
@@ -23,7 +19,6 @@ author: HamIT
 
 ## 1. What is a Data Pipeline?
 ### 1.1 Definition of a Data Pipeline
-
 - In simple terms, a data pipeline is **“A process that automates every stage from data generation (collection) to processing (ETL/ELT), storage, analysis, and training.”** (c.f. ELT: Extract, Load, Transform)<br>
 - For instance:
   - Collection: Extracting logs, sensor data, database records, etc.
@@ -32,8 +27,7 @@ author: HamIT
   - Model Training: Periodically retraining models with new data.
   - Deployment: Transferring trained models to production environments.
   - Monitoring: Tracking model predictions, performance monitoring, and detecting data drift.
-- The essence is automating all these processes so that, once set up, they can run periodically with minimal human intervention.
-<br><br>
+- The essence is automating all these processes so that, once set up, they can run periodically with minimal human intervention.<br>
 
 ### 1.2 Why is Automation Necessary?
 - Humans dislike repetitive tasks! Manually running scripts daily at midnight might work for a while but will inevitably lead to lapses.
@@ -44,6 +38,21 @@ author: HamIT
 
 ## 2. What is Automated Model Management?
 ### 2.1 Model Versioning & Registry
+- Just like version control in software, tracking versions of machine learning models is essential.
+- Recording which dataset version, hyperparameters, and code snapshot were used for training makes rollback and comparisons much easier when issues arise.
+- Tools like Model Registry (e.g., MLflow Model Registry, SageMaker Model Registry) are commonly used for this purpose.<br>
+
+### 2.2 CI/CD + CT (Continuous Training)
+- In software development, we have CI/CD (Continuous Integration/Continuous Deployment); in machine learning, CT (Continuous Training) complements this.
+  - CI/CD pipelines: Automate testing, building, validation, and deployment when model code changes.
+  - CT pipelines: Periodically retrain models with new data or trigger retraining when data drift is detected, and deploy automatically if performance meets predefined thresholds.
+- Fully automated systems seamlessly integrate data pipelines and model pipelines for end-to-end automation.<br>
+
+### 2.3 Monitoring & Alerts
+- Real-time monitoring of deployed models is crucial to ensure they perform as expected.
+  - For example, alerts via Slack or email when predictions deviate beyond a certain range.
+  - Triggering retraining upon detecting data distribution shifts (data drift).
+  - These monitoring stages can also be automated within the pipeline.
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
