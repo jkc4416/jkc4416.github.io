@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: "Building Data Pipelines for Automated Model Management: Why Is It Necessary?"
+# subtitle: 
+# gh-repo: daattali/beautiful-jekyll
+# gh-badge: [star, fork, follow]
+tags: [MLOps, Data Pipeline, Automated Model Management, Machine Learning Operations, Continuous Training (CT), Model Registry, Feature Store, Data Automation, CI/CD Pipelines, Data Engineering, Model Monitoring, Data Drift, Cloud-Native Solutions, Explainable AI (XAI), Infrastructure as Code (IaC), Low-code/No-code ML Tools, AI Scalability, ML Workflow Automation, End-to-End AI Systems, Observability in AI]
 comments: true
 mathjax: true
-author: Bill Smith
+author: Kyungchae Jung
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+**Have you ever faced situations like these?**<br>
+“I trained and deployed a model, but a week later, the data changed, and the performance dropped significantly.”<br>“I developed a new model version, but I can’t trace which data was used, how it was trained, or even under what conditions and by whom.”<br>“I’m familiar with CI/CD pipelines, so why is updating ML models so complicated?”
 
-**Here is some bold text**
+**The key to solving these operational challenges in managing machine learning models lies in building data pipelines and automated model management. Automating the end-to-end process—from periodic data collection and preprocessing, feature engineering, model training and validation, to deploying new model versions—makes AI projects significantly more robust.**<br><br>
 
-## Here is a secondary heading
+## 1. What is a Data Pipeline?
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
