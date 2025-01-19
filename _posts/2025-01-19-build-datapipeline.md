@@ -7,8 +7,13 @@ title: "Building Data Pipelines for Automated Model Management: Why Is It Necess
 tags: [MLOps, Data Pipeline, Automated Model Management, Machine Learning Operations, Continuous Training (CT), Model Registry, Feature Store, Data Automation, CI/CD Pipelines, Data Engineering, Model Monitoring, Data Drift, Cloud-Native Solutions, Explainable AI (XAI), Infrastructure as Code (IaC), Low-code/No-code ML Tools, AI Scalability, ML Workflow Automation, End-to-End AI Systems, Observability in AI]
 comments: true
 mathjax: true
-author: Kyungchae Jung
+author: HamIT
 ---
+
+/* Markdown 콘텐츠에만 줄 간격 적용 */
+.markdown-body {
+  line-height: 1.8;
+}
 
 {: .box-success}
 **Have you ever faced situations like these?**<br>
@@ -17,6 +22,28 @@ author: Kyungchae Jung
 **The key to solving these operational challenges in managing machine learning models lies in building data pipelines and automated model management. Automating the end-to-end process—from periodic data collection and preprocessing, feature engineering, model training and validation, to deploying new model versions—makes AI projects significantly more robust.**<br><br>
 
 ## 1. What is a Data Pipeline?
+### 1.1 Definition of a Data Pipeline
+
+- In simple terms, a data pipeline is **“A process that automates every stage from data generation (collection) to processing (ETL/ELT), storage, analysis, and training.”** (c.f. ELT: Extract, Load, Transform)<br>
+- For instance:
+  - Collection: Extracting logs, sensor data, database records, etc.
+  - Processing: Handling missing or anomalous data, format transformation, feature engineering, etc.
+  - Storage: Data lakes, data warehouses, feature stores, etc.
+  - Model Training: Periodically retraining models with new data.
+  - Deployment: Transferring trained models to production environments.
+  - Monitoring: Tracking model predictions, performance monitoring, and detecting data drift.
+- The essence is automating all these processes so that, once set up, they can run periodically with minimal human intervention.
+<br><br>
+
+### 1.2 Why is Automation Necessary?
+- Humans dislike repetitive tasks! Manually running scripts daily at midnight might work for a while but will inevitably lead to lapses.
+- Data volumes are growing, and changes are becoming more frequent. When data scales from thousands to millions or billions of records daily, manual handling becomes infeasible.
+- Consistency is critical. If preprocessing changes with each model iteration, comparing versions becomes challenging.
+- Faster iteration cycles. Regularly updating models to reflect fresh data demands an automated pipeline to accelerate the “idea → experiment → deployment” cycle.
+<br><br>
+
+## 2. What is Automated Model Management?
+### 2.1 Model Versioning & Registry
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
