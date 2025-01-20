@@ -10,10 +10,12 @@
 ############################
 
 # Name of website
-title: My website
+# title: My website
+title: HamIT's Tech blog
 
 # Your name to show in the footer
-author: Some Person
+# author: Some Person
+author: HamIT
 
 ###############################################
 # --- List of links in the navigation bar --- #
